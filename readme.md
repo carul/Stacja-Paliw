@@ -1,3 +1,5 @@
+Wymagana wersja PHP 5.4!<br/>
+<br/>
 Opis plików:<br/>
 buyform.php - formularz nowego zamówienia<br/>
 database.php - skrypt zarządający bazą danych / skrypt instalacyjny<br/>
