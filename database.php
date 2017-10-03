@@ -1,7 +1,9 @@
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-  $db = new mysqli("localhost", "root", "password", "glancoil");
+  $dbname = "baza";
+  $db = new mysqli("host", "login", "password", $dbname);
+  $db->query("ALTER DATABASE $dbname DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci");
   if($db->connect_error)
   {
     die("Błąd łączenia z bazą danych: " . $db->connect_error);

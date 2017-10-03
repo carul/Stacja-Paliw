@@ -12,7 +12,7 @@
     echo "<td class=\"col-md-2\">Zniżka</td>";
     echo "<td class=\"col-md-1\">Usuń zamówienie</td>";
     echo "</tr></thead><tbody>";
-    $orders = $db->query("SELECT * FROM $ordertable");
+    $orders = $db->query("SELECT * FROM $ordertable ORDER BY ID desc");
     while($row = $orders->fetch_row()){
       echo "<tr>";
       echo "<td>" . $row[0] . "</td>";
